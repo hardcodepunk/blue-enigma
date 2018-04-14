@@ -49,6 +49,14 @@
 .flex__row {
   flex-direction: row;
 }
+.splash {
+  width: 100%;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+}
 
 .index__tile-1 {
   @include image_2x("../img/index__tile-1@2x.png", 100%, 100%);
@@ -64,6 +72,11 @@
 }
 .index__tile-4 {
   @include image_2x("../img/index__tile-4@2x.png", 100%, 100%);
+  background-size: cover;
+}
+
+.index__splash-1 {
+  @include image_2x("../img/index__splash-1@2x.jpg", 100%, 100%);
   background-size: cover;
 }
 
@@ -140,15 +153,45 @@
 }
 
 .section {
-  height: 100%;
-  width: 100%;
   &__intro {
     font-size: 48px;
     margin-bottom: 90px;
   }
   &__content {
     overflow: hidden;
-    margin: 70px 0 160px ;
+  }
+}
+
+.section__showcase {
+  margin: 70px 0 160px ;
+}
+
+.section__family-business {
+  margin: 200px 0 150px ;
+  .text-block__title {
+    color: $red;
+  }
+}
+
+.text-block {
+  &__body {
+    font-size: 20px;
+  }
+}
+
+.text-block--horizontal {
+  width: 50%;
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: bottom;
+  padding: 0 25px 0 0;
+  &:last-child {
+    padding: 0 0 0 25px;
+  }
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
   }
 }
 
