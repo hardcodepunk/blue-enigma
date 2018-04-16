@@ -173,6 +173,13 @@
   }
 }
 
+.section__riding-structures {
+  margin: 50px 0 160px ;
+  .text-block__title {
+    color: $blue;
+  }
+}
+
 .text-block {
   &__body {
     font-size: 20px;
