@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<header class="header">
+<header id="site-nav" class="header">
   <div class="wrapper">
     <div class="header__logo">
-      <a href="#">
+      <a href="http://www.bluenigma.com/">
         <div class="header__logo__illustration">
           <?xml version="1.0" encoding="utf-8"?>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -293,9 +293,8 @@
         </div>
       </a>
     </div>
-    <nav class="header__nav">
+    <nav class="nav">
       <ul class="list">
-        <li class="list__item"><a href="#">About</a></li>
         <li class="list__item"><a href="#">Accomodation</a></li>
         <li class="list__item"><a href="#">Art</a></li>
         <li class="list__item"><a href="#">Activities</a></li>
@@ -323,13 +322,13 @@
   <div class="wrapper">
     <div class="section__content">
       <p class="section__intro">Located in the charming village of Apikia, on the island Andros, lies art hotel Blue Enigma. The brainchild of a former mechanical engineer and dedicated bike rider, Nikos Garyfallos.</p>
-      <div class="flex-container">
-        <div class="flex-item square index__tile-1"></div>
-        <div class="flex-item flex__column">
-          <div class="flex-item beam index__tile-2"></div>
-          <div class="flex-item beam flex-container">
-            <div class="flex-item square flex__row index__tile-3"></div>
-            <div class="flex-item square index__tile-4"></div>
+      <div class="showcase-container">
+        <div class="showcase-item square index__tile-1"></div>
+        <div class="showcase-item showcase__column">
+          <div class="showcase-item beam index__tile-2"></div>
+          <div class="showcase-item beam showcase-container">
+            <div class="showcase-item square showcase__row index__tile-3"></div>
+            <div class="showcase-item square index__tile-4"></div>
           </div>
         </div>
       </div>
@@ -348,6 +347,7 @@
     </div>
   </div>
 </section>
+<div class="splash index__splash-2"></div>
 <section class="section__riding-structures">
   <div class="wrapper">
     <div class="text-block text-block--centered">
@@ -355,11 +355,42 @@
       <h3 class="title-3 text-block__title">Riding structures</h3>
     </div>
     <div class="text-block text-block--centered">
-      <p class="text-block__body">After 15 years of inactivity, Nikos decided to rejuvenate the family business and with commitment and hard work, trace his grandfather’s footsteps and reinstate it to its former glory.<br>Adding of course his own elements to the equation, by creating riding facilities for BMX and alike. All built with his own hands.</p>
+      <p class="text-block__body">Visitors have full access to our facilities: Enigma Bowl and Gratitude Trails. During the summer period, our professional riding instructor, George Felekis, is at hand to teach riders of all ages and any skill level.</p>
+      <p class="text-block__body">Even though we are a fairly new business, each year we do our best to improve and meet our visitor’s expectations. Our main goal here at Blue Enigma is to support the local scene and create various unique riding structures in order to push the boundaries of pure cruising.</p>
     </div>
   </div>
 </section>
+<div class="panels">
+  <a href="#" class="panel panel1">
+    <div class="panel__overlay"></div>
+    <h5 class="panel__title">Hotel</h5>
+  </a>
+  <a href="#" class="panel panel2">
+    <div class="panel__overlay"></div>
+    <h5 class="panel__title">Art</h5>
+  </a>
+  <a href="#" class="panel panel3">
+    <div class="panel__overlay"></div>
+    <h5 class="panel__title">Activities</h5>
+  </a>
+  <a href="#" class="panel panel4">
+    <div class="panel__overlay"></div>
+    <h5 class="panel__title">Explore</h5>
+  </a>
+</div>
 <footer class="footer">
+    <div class="wrapper">
+      <nav class="nav footer__nav">
+        <a href="#" class="button">Book now</a>
+      </nav>
+      <nav class="social-anchors">
+        <ul class="list">
+          <li class="list__item social-anchor__facebook"><a href="https://www.facebook.com/Bluenigmagreece-229049270534395/">Facebook</a></li>
+          <li class="list__item social-anchor__instagram"><a href="https://www.instagram.com/bluenigmagreece/">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </footer>
 <!-- Scripts -->
 <script src="assets/js/script.js"></script>
