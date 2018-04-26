@@ -198,6 +198,8 @@
 }
 
 .social-anchors {
+  float:none;
+  text-align: center;
   .list__item {
     margin: 17px 24px 0 0;
   }
@@ -267,23 +269,40 @@
   &__content {
     overflow: hidden;
   }
-}
-
-.section__showcase {
-  padding: 70px 0 160px ;
-}
-
-.section__family-business {
-  margin: 200px 0 150px ;
-  .text-block__title {
-    color: $red;
+  &__showcase {
+    padding: 70px 0 160px ;
+  }
+  &__family-business {
+    padding: 200px 0 150px;
+    .text-block__title {
+      color: $red;
+    }
+  }
+  &__riding-structures {
+    padding: 50px 0 160px ;
+    .text-block__title {
+      color: $blue;
+    }
   }
 }
 
-.section__riding-structures {
-  margin: 50px 0 160px ;
+.section--spacious {
+  padding: 200px 0 340px;
+}
+
+.section--dark {
+  color: #fff;
+  background: #000;
   .text-block__title {
-    color: $blue;
+    color: #fff;
+  }
+}
+
+.section--red {
+  color: #000;
+  background: $red;
+  .text-block__title {
+    color: #000;
   }
 }
 
@@ -317,6 +336,9 @@
     margin: 50px auto 0;
     &+.text-block__body {
       margin: 25px auto 0;
+    }
+    &+.button {
+      margin: 90px auto 0;
     }
   }
   &:after {
@@ -368,11 +390,29 @@
     flex: 1 0 auto;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     padding-bottom: 50px;
   }
   &:hover {
     flex: 2;
+  }
+}
+
+.table {
+  &__title {
+    text-align: center;
+  }
+}
+
+.table--highlight {
+  .table__title, .price__amount {
+    color: $red;
+  }
+}
+
+.price {
+  &__amount {
+    float: right;
   }
 }
 
