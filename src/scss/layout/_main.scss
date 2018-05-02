@@ -101,6 +101,30 @@
   background-size: cover;
 }
 
+.accomodation__tile-1 {
+  background: url("../img/accomodation__tile-1.jpg") no-repeat;
+  @include image_2x("../img/accomodation__tile-1@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
+.accomodation__tile-2 {
+  background: url("../img/accomodation__tile-2.jpg") no-repeat;
+  @include image_2x("../img/accomodation__tile-2@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
+.accomodation__tile-3 {
+  background: url("../img/accomodation__tile-3.jpg") no-repeat;
+  @include image_2x("../img/accomodation__tile-3@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
+.accomodation__tile-4 {
+  background: url("../img/accomodation__tile-4.jpg") no-repeat;
+  @include image_2x("../img/accomodation__tile-4@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
 .index__splash-1 {
   background: url("../img/index__splash-1.jpg") no-repeat;
   @include image_2x("../img/index__splash-1@2x.jpg", 100%, 100%);
@@ -193,6 +217,13 @@
   }
 }
 
+.nav {
+  .button {
+    font-size: 14px;
+    padding: 17px 49px;
+  }
+}
+
 .footer__nav {
   float: left;
 }
@@ -256,6 +287,10 @@
   }
 }
 
+.section__form {
+
+}
+
 .section {
   &__overlay {
     position: absolute;
@@ -272,7 +307,7 @@
   &__showcase {
     padding: 70px 0 160px ;
   }
-  &__family-business {
+  &__family-business, &__charming-rooms {
     padding: 200px 0 150px;
     .text-block__title {
       color: $red;
@@ -282,6 +317,15 @@
     padding: 50px 0 160px ;
     .text-block__title {
       color: $blue;
+    }
+  }
+  &__pricing {
+    &__bottom {
+      width: 100%;
+      text-align: center;
+    }
+    .button {
+      margin: 45px auto 0;
     }
   }
 }
@@ -398,19 +442,49 @@
   }
 }
 
-.table {
-  &__title {
-    text-align: center;
+.table--highlight {
+  .table__title, .table__subtitle, .price__amount {
+    color: $red;
+  }
+  .table__title {
+    position: relative;
+    &:after {
+      content: "";
+      @include translateX();
+      width: 90%;
+      border-bottom: 5px solid $red;
+      bottom: -34px;
+    }
   }
 }
 
-.table--highlight {
-  .table__title, .price__amount {
-    color: $red;
+.table {
+  &__title, &__subtitle, &__footnote {
+    text-align: center;
+  }
+  &__asterisk {
+    font-size: 30px;
+    color: #fff;
+  }
+  &__footnote {
+    font-size: 11px;
+    margin: 40px auto 0;
+    display: block;
+    .table__asterisk {
+      font-size: 24px;
+    }
+  }
+  &__divider {
+    width: 100%;
+    margin: 20px 0 60px;
+    border-bottom: 1px solid #fff;
   }
 }
 
 .price {
+  &__title, &__amount {
+    line-height: 40px;
+  }
   &__amount {
     float: right;
   }
@@ -430,11 +504,4 @@
   text-transform: uppercase;
   padding: 20px 55px;
   display: inline-block;
-}
-
-.nav {
-  .button {
-    font-size: 14px;
-    padding: 17px 49px;
-  }
 }

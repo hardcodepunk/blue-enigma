@@ -4,7 +4,7 @@
   <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blue Enigma — Accomodation</title>
+  <title>Blue Enigma — Book now</title>
   <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Karla:400,700" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -304,93 +304,26 @@
     </nav>
   </div>
 </header>
-<section class="head">
-  <div class="head__visual"></div>
-  <div class="head__overlay"></div>
-  <div class="wrapper wrapper--fullheight">
-    <div class="head__content">
-      <h1 class="title-1">Accomodation</h1>
-      <h2 class="title-2">Blue Enigma</h2>
-      <p class="head__intro">The traditional rooms &amp; apartments in accordance with the cozy atmosphere of our unit will make you feel comfortable from the very beginning.</p>
-      <a href="#" class="button">Book now</a>
-    </div>
-  </div>
-</section>
-<div class="splash index__splash-1"></div>
-<section class="section__charming-rooms section--dark">
+<section class="form">
   <div class="wrapper">
-    <div class="text-block text-block--horizontal">
-      <h4 class="title-4 text-block__title">Cozy atmosphere</h4>
-      <h3 class="title-3 text-block__title">Charming Rooms</h3>
-    </div>
-    <div class="text-block text-block--horizontal">
-      <p class="text-block__body">Five charming rooms with a bathroom, airconditioning, a fridge and a balcony with sea view. Each room can accommodate up to four people with an option of double or single beds.</p>
-    </div>
-  </div>
-</section>
-<section class="section__pricing section--dark">
-  <div class="wrapper">
-    <div class="section__content">
-      <div class="showcase-container">
-        <div class="showcase-item showcase__column table table--highlight">
-          <h5 class="title-5 table__title">Discount prices<span class="table__asterisk">*</span></h5>
-          <h6 class="title-6 table__subtitle">If you book at least 3 months in advance for spring and summer period.</h6>
+    <div class="form__content">
+      <h1 class="title-1">Book now</h1>
+      <h2 class="title-2">Fill in the form</h2>
+      <p class="form__intro">Please use the form below<br>to book your stay at Blue Enigma.</p>
+      <form action="/my-handling-form-page" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
         </div>
-        <div class="showcase-item showcase__column table">
-          <h5 class="title-5 table__title">Regular prices<span class="table__asterisk">*</span></h5>
+        <div>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_mail">
         </div>
-      </div>
-      <div class="table__divider"></div>
-      <div class="showcase-container">
-        <div class="showcase-item showcase__column table table--highlight">
-          <ul class="table__list">
-            <li class="price"><span class="price__title">Single bed</span><span class="price__amount">25 euros</span></li>
-            <li class="price"><span class="price__title">Apartment for 2 adults</span><span class="price__amount">60 euros</span></li>
-            <li class="price"><span class="price__title">Apartment for 2 adults &amp; 2 children</span><span class="price__amount">70 euros</span></li>
-            <li class="price"><span class="price__title">Apartment for 4 adults</span><span class="price__amount">90 euros</span></li>
-          </ul>
+        <div>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
         </div>
-        <div class="showcase-item showcase__column table">
-          <ul class="table__list">
-            <li class="price"><span class="price__title">Single bed</span><span class="price__amount">30 euros</span></li>
-            <li class="price"><span class="price__title">Apartment for 2 adults</span><span class="price__amount">70 euros</span></li>
-            <li class="price"><span class="price__title">Apartment for 2 adults &amp; 2 children</span><span class="price__amount">80 euros</span></li>
-            <li class="price"><span class="price__title">Apartment for 4 adults</span><span class="price__amount">100 euros</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="section__pricing__bottom">
-        <span class="table__footnote"><span class="table__asterisk">*</span>Breakfast included</span>
-        <a href="#" class="button">Book now</a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section__showcase section--dark">
-  <div class="wrapper">
-    <div class="section__content">
-      <div class="showcase-container">
-        <div class="showcase-item square accomodation__tile-1"></div>
-        <div class="showcase-item showcase__column">
-          <div class="showcase-item beam accomodation__tile-2"></div>
-          <div class="showcase-item beam showcase-container">
-            <div class="showcase-item square showcase__row accomodation__tile-3"></div>
-            <div class="showcase-item square accomodation__tile-4"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="splash index__splash-1"></div>
-<section class="section section--red section--spacious">
-  <div class="wrapper">
-    <div class="text-block text-block--horizontal">
-      <h4 class="title-4 text-block__title">Local and Fresh Products</h4>
-      <h3 class="title-3 text-block__title">Bar Restaurant</h3>
-    </div>
-    <div class="text-block text-block--horizontal">
-      <p class="text-block__body">Blue Enigma hosts an eatery which operates for breakfast and dinner. It offers a variety of Greek and international dishes prepared with local fresh agricultural products and special care.</p>
+      </form>
     </div>
   </div>
 </section>

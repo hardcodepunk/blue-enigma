@@ -46,6 +46,14 @@
   text-rendering: optimizeLegibility;
 }
 
+@mixin title-6 {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
 @mixin body-regular {
   margin: 0;
   font-size: 1.4em;
