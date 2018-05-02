@@ -304,7 +304,7 @@
     </nav>
   </div>
 </header>
-<section class="form">
+<section class="head section__form">
   <div class="wrapper">
     <div class="form__content">
       <h1 class="title-1">Book now</h1>
@@ -312,16 +312,39 @@
       <p class="form__intro">Please use the form below<br>to book your stay at Blue Enigma.</p>
       <form action="/my-handling-form-page" method="post">
         <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name">
         </div>
         <div>
-          <label for="mail">E-mail:</label>
-          <input type="email" id="mail" name="user_mail">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name">
         </div>
         <div>
-          <label for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
+          <label for="mail">Your Email</label>
+          <input type="email" id="mail" name="mail">
+        </div>
+        <div>
+          <label for="arriving-date">Arriving Date</label>
+          <input type="text" id="arriving-date" name="arriving-date">
+        </div>
+        <div>
+          <label for="departing-date">Departing Date</label>
+          <input type="departing-date" id="departing-date" name="departing-date">
+        </div>
+        <div>
+          <label for="number-of-people">Number of People</label>
+          <input type="number-of-people" id="number-of-people" name="number-of-people">
+        </div>
+        <div>
+          <label for="telephone-number">Telephone Number</label>
+          <input type="telephone-number" id="telephone-number" name="telephone-number">
+        </div>
+        <div>
+          <label for="msg">Comments</label>
+          <textarea id="msg" name="message"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Send your message</button>
         </div>
       </form>
     </div>
