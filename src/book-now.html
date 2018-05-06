@@ -310,7 +310,7 @@
       <h1 class="title-1">Book now</h1>
       <h2 class="title-2">Fill in the form</h2>
       <p class="form__intro">Please use the form below<br>to book your stay at Blue Enigma.</p>
-      <form action="/my-handling-form-page" method="post">
+      <!--<form action="/my-handling-form-page" method="post">
         <div>
           <label for="first-name">First Name</label>
           <input type="text" id="first-name" name="first-name">
@@ -346,6 +346,11 @@
         <div class="button">
           <button type="submit">Send your message</button>
         </div>
+      </form>-->
+      <form action="../dest/assets/py/form-handler.py" method="POST">
+        <input type='text' name='email' placeholder='example@example.com'/>
+        <input type='text' name='message' placeholder='your message'/>
+        <button type='submit'>Send your message</button>
       </form>
     </div>
   </div>
