@@ -10,6 +10,33 @@ html, body {
   * Typography
   * ============================================ */
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3595400, 2018-06-12T10:03:24-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: PerpetuaMTPro by Monotype
+ * URL: https://www.myfonts.com/fonts/mti/perpetua/pro-roman/
+ * Copyright: Font software &#x00A9; 1991 Adobe Systems Incorporated. Typeface designs &#x00A9; 1991 The Monotype Corporation. All rights reserved.
+ * Licensed pageviews: 250,000
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3595400
+ *
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/36dc88");
+@font-face {font-family: 'PerpetuaMTPro';src: url('../fonts/36DC88_0_0.eot');src: url('../fonts/36DC88_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/36DC88_0_0.woff2') format('woff2'),url('../fonts/36DC88_0_0.woff') format('woff'),url('../fonts/36DC88_0_0.ttf') format('truetype');}
+
+
 body {
   font-size: 16px;
   background: #fff;
