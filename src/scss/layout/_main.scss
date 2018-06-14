@@ -362,6 +362,22 @@
   }
 }
 
+.section--white {
+  color: #000;
+  background: #fff;
+  .text-block__title {
+    color: #000;
+  }
+}
+
+.section--blue {
+  color: #000;
+  background: $blue--light;
+  .text-block__title {
+    color: #000;
+  }
+}
+
 .text-block {
   &__body {
     font-size: 20px;
@@ -372,7 +388,6 @@
   width: 50%;
   display: inline-block;
   margin-right: -4px;
-  vertical-align: bottom;
   padding: 0 25px 0 0;
   &:last-child {
     padding: 0 0 0 25px;
