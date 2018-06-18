@@ -141,6 +141,30 @@
   }
 }
 
+.exploration__tile-1 {
+  background: url("../img/exploration__tile-1.jpg") no-repeat;
+  @include image_2x("../img/exploration__tile-1@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
+.exploration__tile-2 {
+  background: url("../img/exploration__tile-2.jpg") no-repeat;
+  @include image_2x("../img/exploration__tile-2@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
+.exploration__tile-3 {
+  background: url("../img/exploration__tile-3.jpg") no-repeat;
+  @include image_2x("../img/exploration__tile-3@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
+.exploration__tile-4 {
+  background: url("../img/exploration__tile-4.jpg") no-repeat;
+  @include image_2x("../img/exploration__tile-4@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
 .exploration__splash-1 {
   background: url("../img/activities__splash-1.jpg") no-repeat;
   @include image_2x("../img/activities__splash-1@2x.jpg", 100%, 100%);
@@ -170,6 +194,11 @@
 .index__head__visual {
   background: url("../img/head-1.jpg") no-repeat;
   @include image_2x("../img/head-1@2x.jpg", 100%, 100%);
+}
+
+.activities__head__visual {
+  background: url("../img/head-2.jpg") no-repeat;
+  @include image_2x("../img/head-2@2x.jpg", 100%, 100%);
 }
 
 .exploration__head__visual {
