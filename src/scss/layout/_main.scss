@@ -141,6 +141,12 @@
   }
 }
 
+.activities__tile-1 {
+  background: url("../img/activities__tile-1.jpg") no-repeat;
+  @include image_2x("../img/activities__tile-1@2x.jpg", 100%, 100%);
+  background-size: cover;
+}
+
 .exploration__tile-1 {
   background: url("../img/exploration__tile-1.jpg") no-repeat;
   @include image_2x("../img/exploration__tile-1@2x.jpg", 100%, 100%);
@@ -197,8 +203,13 @@
 }
 
 .activities__head__visual {
-  background: url("../img/head-2.jpg") no-repeat;
-  @include image_2x("../img/head-2@2x.jpg", 100%, 100%);
+  background: url("../img/head-2--bw.jpg") no-repeat;
+  @include image_2x("../img/head-2--bw@2x.jpg", 100%, 100%);
+}
+
+.art__head__visual {
+  background: url("../img/head-3.jpg") no-repeat;
+  @include image_2x("../img/head-3@2x.jpg", 100%, 100%);
 }
 
 .exploration__head__visual {
@@ -316,14 +327,36 @@
   }
   .title-1, .title-2 {
     color: $blue;
+    white-space: nowrap;
   }
   .title-2 {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
   &__intro {
     font-size: 20px;
     max-width: 550px;
     margin: 0 auto 45px;
+    display: none;
+  }
+}
+
+.head__designation-scroll {
+  @include translateX();
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $blue;
+  z-index: 79;
+  bottom: 40px;
+  &:after {
+    content: "";
+    @include translateX();
+    top: -47px;
+    width: 4px;
+    background-color: $blue;
+    height: 40px;
   }
 }
 
