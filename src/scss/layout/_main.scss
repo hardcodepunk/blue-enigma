@@ -202,9 +202,14 @@
   @include image_2x("../img/head-1@2x.jpg", 100%, 100%);
 }
 
+.accomodation__head__visual {
+  background: url("../img/head-2.jpg") no-repeat;
+  @include image_2x("../img/head-2@2x.jpg", 100%, 100%);
+}
+
 .activities__head__visual {
-  background: url("../img/head-2--bw.jpg") no-repeat;
-  @include image_2x("../img/head-2--bw@2x.jpg", 100%, 100%);
+  background: url("../img/head-3--bw.jpg") no-repeat;
+  @include image_2x("../img/head-3--bw@2x.jpg", 100%, 100%);
 }
 
 .art__head__visual {
@@ -212,9 +217,14 @@
   @include image_2x("../img/head-3@2x.jpg", 100%, 100%);
 }
 
+.activities__head__visual {
+  background: url("../img/head-5.jpg") no-repeat;
+  @include image_2x("../img/head-5@2x.jpg", 100%, 100%);
+}
+
 .exploration__head__visual {
-  background: url("../img/head-4.jpg") no-repeat;
-  @include image_2x("../img/head-4@2x.jpg", 100%, 100%);
+  background: url("../img/head-5.jpg") no-repeat;
+  @include image_2x("../img/head-5@2x.jpg", 100%, 100%);
 }
 
 /*
